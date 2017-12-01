@@ -1,0 +1,13 @@
+[Unit]
+Description=C.A.V.A Web
+
+[Service]
+StandardInput=tty-force
+#TTYPath=/dev/pts/0
+Environment=TERM=xterm-256color
+ExecStart=/opt/gotty/bin/gotty cava
+User=cavaweb
+Group=cavaweb
+
+[Install]
+WantedBy=multi-user.target
