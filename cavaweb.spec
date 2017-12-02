@@ -52,5 +52,5 @@ exit 0
 
 %files
 %doc README.md
-%attr(550, -, -) %{_unitdir}/cavaweb.service
+%attr(644, root, -) %{_unitdir}/cavaweb.service
 %attr(-, root, cavaweb) %{_sharedstatedir}/%{name}/.config/cava/config.example
